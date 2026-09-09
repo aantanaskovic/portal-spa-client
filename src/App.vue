@@ -1,0 +1,13 @@
+<script setup>
+import Navbar from './components/Navbar.vue'
+</script>
+
+<template>
+  <div class="min-h-screen bg-gray-100 text-gray-900 font-sans antialiased">
+    <Navbar v-if="!$route.meta.hideNavbar" />
+
+    <main>
+      <RouterView />
+    </main>
+  </div>
+</template>
